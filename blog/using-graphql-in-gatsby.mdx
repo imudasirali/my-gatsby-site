@@ -1,0 +1,30 @@
+---
+title: "Using GraphQL in Gatsby"
+date: "2025-02-07"
+author: "Jane Smith"
+tags: ["gatsby", "graphql", "data fetching"]
+---
+
+import { Link } from "gatsby"
+
+# Using GraphQL in Gatsby 🔍
+
+Gatsby uses **GraphQL** to fetch and manage data from multiple sources like Markdown files, APIs, and CMSs.
+
+## Why GraphQL?
+- **Efficient Data Fetching**: Request only the data you need.
+- **Single Query Language**: Unifies multiple data sources.
+- **Built-in in Gatsby**: No additional setup required.
+
+## Example Query
+Here's a simple GraphQL query in Gatsby:
+
+```graphql
+query {
+  site {
+    siteMetadata {
+      title
+      description
+    }
+  }
+}
